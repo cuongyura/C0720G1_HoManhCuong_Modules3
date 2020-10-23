@@ -1,5 +1,7 @@
+
 create database manage_borrow_return_book;
 use manage_borrow_return_book;
+​
 -- Tạo bảng student
 create table students(
 student_number varchar(10) primary key,
@@ -8,12 +10,13 @@ student_address varchar(50),
 student_email varchar(50),
 student_image varchar(100)
 );
+​
 -- Tạo bảng loại sách
 create table type_of_book(
 id varchar(10) primary key,
 `name` varchar(50)
 );
-
+​
 -- Tạo bảng library card
 create table libarys_card(
 libary_number varchar(10) primary key,
@@ -26,6 +29,7 @@ libary_student_image varchar(100),
 libary_student_number varchar(10),
 constraint fk foreign key(libary_student_number) references students(student_number)
 );
+​
 -- Tạo bảng borrowoder
 create table borrowoders(
 borrowoder_number varchar(10) primary key,
@@ -36,6 +40,7 @@ date_return date,
 borrowoder_libary_number varchar(10),
 constraint fk_borrowoder foreign key(borrowoder_libary_number) references libarys_card(libary_number)
 );
+
 
 -- Tạo bảng book
 create table books(
@@ -52,10 +57,6 @@ book_type_number varchar(10),
 constraint fk_book_borrowoder foreign key(book_borrowoder_number) references borrowoders(borrowoder_number),
 constraint fk_type foreign key(book_type_number) references type_of_book(id) 
 );
-
-
-
-
 
 
 

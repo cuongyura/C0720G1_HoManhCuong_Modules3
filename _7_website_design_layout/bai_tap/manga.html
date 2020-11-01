@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class *= "col-"] {
+    float: left;
+    padding: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #F18121;
+}
+
+span {
+    margin: 5px;
+    color: white;
+    padding: 15px 10px;
+}
+
+nav span:hover {
+    background-color: #f2ac77;
+}
+
+.row::after {
+    clear: both;
+}
+.schedule {
+    display: flex;
+    box-shadow: 0 10px 20px;
+}
+
+#schedule-button {
+    background-color: #F18121;
+    color: white;
+    padding: 15px;
+    border-radius: 15px 15px 15px;
+}
+
+#schedule-content {
+    margin: auto;
+    padding: 0 10px;
+}
+
+.img-side {
+    margin: 0 0 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    [class *= 'col-'] {
+        width: 100%;
+    }
+}
+
+	</style>
+</head>
+<body>
+  <div class="row">
+    <nav class="col-12">
+        <span>Trang chủ</span>
+        <span>Thể loại</span>
+        <span>Sắp xếp</span>
+        <span>Con gái</span>
+        <span>Con trai</span>
+        <span>Tìm truyện</span>
+        <span>Lịch sử</span>
+        <span>Theo dõi</span>
+        <span>Thảo luận</span>
+        <span>Fanpage</span>
+        <span>Tuyển nhân sự</span>
+    </nav>
+</div>
+<div class="row">
+    <aside class="col-3">
+        <img class="img-side" src="AoT.jpg" alt="">
+        <img class="img-side" src="Hero%20Academia.jpg" alt="">
+    </aside>
+    <main class="col-6">
+        <img src="OPM.jpg" alt="">
+    </main>
+    <aside class="col-3">
+        <img class="img-side" src="Hero%20Academia.jpg" alt="">
+        <img class="img-side" src="FT.jpg" alt="">
+    </aside>
+</div>
+<div class="row">
+    <footer class="col-12 schedule">
+        <div id="schedule-button">Lịch ra truyện</div>
+        <p id="schedule-content">[12:00] The Man Who Killed Nobunaga - Chương 6 [14:00] Địa Ngục Thần Y - Chương 162 [16:00] Tôi Không Phải Quỷ Vương - Chương 22
+            [18:00] Baki Dou (2018) - Chương 20 [20:00] Tôi Thở Cũng Có Thể Mạnh Hơn - Chương 35 [22:00] Lang Hoàn Thư Viện - Chương 119
+        </p>
+    </footer>
+</div>
+</body>
+</html>

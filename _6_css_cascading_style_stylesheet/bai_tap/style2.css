@@ -1,0 +1,33 @@
+#menu {
+    background: brown;
+    height: 50px;
+    text-align: center;
+}
+#left{
+    position: absolute;
+    left: 50px;
+    width: 30%;
+    height: 500px;
+    background: antiquewhite;
+}
+#right{
+    position: absolute;
+    left: 500px;
+    width: 65%;
+    height: 570px;
+}
+.truyen{
+    font-size: 25px;
+    margin-top: 25px;
+}
+a{
+    font-size: 40px;
+    text-decoration: none;
+}
+#between{
+    position: absolute;
+    width : 300px;
+    height: 200px;
+    position: absolute;
+    left: 20px;
+}

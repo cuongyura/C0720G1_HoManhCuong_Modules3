@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="curency_converter_application:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/curency_converter_application_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="curency_converter_application/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="curency_converter_application" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
